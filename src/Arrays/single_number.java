@@ -14,9 +14,9 @@ public class single_number {
 				}
 				
 			}
-			return arr[arr.length-1];	
+			
 		}
-		
+		return arr[arr.length-1];
 	}
 	
 	public static void main(String[] args) {
