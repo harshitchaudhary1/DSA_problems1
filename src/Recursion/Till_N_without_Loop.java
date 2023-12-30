@@ -10,7 +10,9 @@ public class Till_N_without_Loop {
 		int[] arr = new int[x];
 		
 		PrintNTimes(x, arr);
-		
+		for(int i: arr) {
+			System.out.println(i);
+		}
 	}
 	public static void PrintNTimes(int x , int[] arr) {
 		if(x>=1) {
@@ -18,6 +20,6 @@ public class Till_N_without_Loop {
 			PrintNTimes(x-1, arr);
 			
 		}
-		System.out.println(arr);
+		
 	}
 }
