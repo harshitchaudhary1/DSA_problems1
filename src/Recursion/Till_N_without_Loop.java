@@ -18,8 +18,6 @@ public class Till_N_without_Loop {
 		if(x>=1) {
 			arr[x-1]=x;
 			PrintNTimes(x-1, arr);
-			
 		}
-		
 	}
 }
