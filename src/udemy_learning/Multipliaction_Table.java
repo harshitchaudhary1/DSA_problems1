@@ -3,7 +3,7 @@ package udemy_learning;
 public class Multipliaction_Table {
 	 void print() {
 		 //Refracting
-		 print(5,1,10);
+		 print(5);
 		 
 //		for(int i =1;i<=10;i++) {
 //			System.out.printf("%d * %d = %d", 5, i,5*i);
