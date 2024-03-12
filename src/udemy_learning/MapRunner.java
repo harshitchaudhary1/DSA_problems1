@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MapRunner {
 		public static void main(String[] args) {
-			String str = "This is an awesome occasion."+
+			String str = "This is an awesome occasion. "+
 							"This has never happened before.";
 			
 			Map<Character , Integer> occurances = new HashMap<>();
@@ -22,5 +22,19 @@ public class MapRunner {
 			}
 			
 			System.out.println(occurances);
+			Map<String , Integer> stringoccurances = new HashMap<>();
+			String[] words = str.split(" ");
+			
+			for(String word:words) {
+				Integer integer =stringoccurances.get(word);
+				if(integer==null) {
+					stringoccurances.put(word, 1);
+				}
+				else {
+					stringoccurances.put(word, integer+1);
+				}
+			}
+			System.out.println(stringoccurances);
 		}
+		
 }
