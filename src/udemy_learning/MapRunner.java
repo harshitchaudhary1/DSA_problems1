@@ -19,8 +19,7 @@ public class MapRunner {
 				else {
 					occurances.put(character, integer+1);
 				}
-			}
-			
+			}	
 			System.out.println(occurances);
 			Map<String , Integer> stringoccurances = new HashMap<>();
 			String[] words = str.split(" ");
@@ -35,6 +34,5 @@ public class MapRunner {
 				}
 			}
 			System.out.println(stringoccurances);
-		}
-		
+		}		
 }

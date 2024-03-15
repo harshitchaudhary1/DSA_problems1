@@ -26,10 +26,11 @@ public class number_crown {
 	        }
 	    }
 	    public static void main(String[] args){
-	        Scanner sc = new Scanner(System.in);
-	        System.out.println("Enter a number");
-	        int n = sc.nextInt();
-	        
-	        numberCrown(n);
+	        try (Scanner sc = new Scanner(System.in)) {
+				System.out.println("Enter a number");
+				int n = sc.nextInt();
+				
+				numberCrown(n);
+			}
 	    }
 }
